@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-aop-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-beans-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-context-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-core-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-expression-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-jdbc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/spring-tx-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/jsoup-1.8.1.jar"/>
+	<classpathentry kind="lib" path="D:/SpringStudy/target/dependencies/json-20090211.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

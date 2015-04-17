@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+    xmlns:util="http://www.springframework.org/schema/util">
+
+   <bean id="stockDataSource"
+       class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+    <property name="url" value="jdbc:mysql://localhost/stock?useUnicode=true&amp;characterEncoding=utf-8"/>
+    <property name="username" value="soup"/>
+    <property name="password" value="051116"/>
+	</bean>
+	
+	<bean id="stockInfoParser" class = "stockDB.parser.StockBasicParser">
+		<property name="urlPattern" value="http://stockdata.stock.hexun.com/"></property>
+	</bean>
+	
+	<bean id="stockInfoCollector" class = "stockDB.StockHistoryCollector">
+		<property name="dao" ref="stockBasicDAO"></property>
+	</bean>
+
+<bean id="stockBasicDAO" class = "stockDB.DBConnector.StockBasicDAO">
+		<property name="dataSource" ref="stockDataSource"></property>
+	</bean>
+</beans>
